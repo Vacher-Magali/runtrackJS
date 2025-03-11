@@ -1,0 +1,20 @@
+body {
+    min-height: 4096px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    background-color: #cb6716; 
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
