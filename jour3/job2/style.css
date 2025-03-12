@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image{
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
