@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
-    // Rendre les images déplaçables avec jQuery UI
+    // Rendre les images déplaçables
     $("#container").sortable({
         placeholder: "sortable-placeholder", 
         update: function() {
-            $("#message").text("");  // Effacer le message quand on réorganise
+            $("#message").text(""); 
         }
     });
 
@@ -17,7 +17,7 @@ $(document).ready(function(){
         $("#message").text(""); 
     });
 
-    
+    //valider la réponse
     $("#check").click(function(){
         let correct = true;
         $("#container img").each(function(index){
