@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job 02 - Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <header class="bg-blue-700 p-4 text-white text-center shadow-lg">
+        <nav>
+            <ul class="flex justify-center space-x-6 text-lg font-semibold">
+                <li><a href="index.html" class="hover:underline">Accueil</a></li>
+                <li><a href="index.html" class="hover:underline">Inscription</a></li>
+                <li><a href="index.html" class="hover:underline">Connexion</a></li>
+                <li><a href="index.html" class="hover:underline">Rechercher</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container mx-auto p-6 flex-grow">
+        <h2 class="text-center text-2xl font-bold mb-4">Créer un compte</h2>
+        <form class="bg-white p-6 shadow-md rounded-lg">
+            <fieldset class="mb-4">
+                <legend class="font-bold">Civilité :</legend>
+                <label class="inline-flex items-center mr-4">
+                    <input type="radio" name="civilite" class="mr-2"> Monsieur
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="civilite" class="mr-2"> Madame
+                </label>
+            </fieldset>
+            <div class="mb-4">
+                <label class="block font-semibold">Prénom</label>
+                <input type="text" class="w-full border rounded p-2" required>
+            </div>
+            <div class="mb-4">
+                <label class="block font-semibold">Nom</label>
+                <input type="text" class="w-full border rounded p-2" required>
+            </div>
+            <div class="mb-4">
+                <label class="block font-semibold">Adresse</label>
+                <input type="text" class="w-full border rounded p-2" required>
+            </div>
+            <div class="mb-4">
+                <label class="block font-semibold">Email</label>
+                <input type="email" class="w-full border rounded p-2" required>
+            </div>
+            <div class="mb-4">
+                <label class="block font-semibold">Mot de passe</label>
+                <input type="password" class="w-full border rounded p-2" required>
+            </div>
+            <div class="mb-4">
+                <label class="block font-semibold">Confirmer le mot de passe</label>
+                <input type="password" class="w-full border rounded p-2" required>
+            </div>
+            <fieldset class="mb-4">
+                <legend class="font-bold">Passions :</legend>
+                <label class="block"><input type="checkbox" class="mr-2"> Informatique</label>
+                <label class="block"><input type="checkbox" class="mr-2"> Voyages</label>
+                <label class="block"><input type="checkbox" class="mr-2"> Sport</label>
+                <label class="block"><input type="checkbox" class="mr-2"> Lecture</label>
+            </fieldset>
+            <div class="text-center">
+                <button class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">S'inscrire</button>
+            </div>
+        </form>
+    </main>
+    
+    <footer class="bg-blue-700 text-white text-center p-4 mt-6 shadow-lg">
+        <p>&copy; 2025 Mon Site. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
